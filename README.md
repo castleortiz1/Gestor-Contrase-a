@@ -15,7 +15,7 @@ Este es un gestor de contraseñas con encriptación, desarrollado utilizando Nod
 1. Clona este repositorio en tu máquina local.
 
    ```bash
-   git clone https://github.com/tu-usuario/password-manager.git
+   git@github.com:castleortiz1/Gestor-Contrase-a.git
    cd password-manager
    ```
 
