@@ -1,0 +1,126 @@
+<!-- <!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestor de Contraseñas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gestor de Contraseñas</h1>
+      <div id="savePassword">
+        <h2>Guardar Contraseña</h2>
+        <input type="text" id="saveAppName" placeholder="Nombre de la App" />
+        <input type="email" id="saveEmail" placeholder="Correo Electrónico" />
+        <input type="password" id="savePassword" placeholder="Contraseña" />
+        <input type="password" id="savePin" placeholder="PIN de 17 dígitos" />
+        <button onclick="savePassword()">Guardar</button>
+      </div>
+      <div id="getPassword">
+        <h2>Recuperar Contraseña</h2>
+        <input type="text" id="getAppName" placeholder="Nombre de la App" />
+        <input type="email" id="getEmail" placeholder="Correo Electrónico" />
+        <input type="password" id="getPin" placeholder="PIN de 17 dígitos" />
+        <button onclick="getPassword()">Recuperar</button>
+        <p id="retrievedPassword"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestor de Contraseñas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gestor de Contraseñas</h1>
+      <div id="savePassword">
+        <h2>Guardar Contraseña</h2>
+        <input type="text" id="saveAppName" placeholder="Nombre de la App" />
+        <input type="email" id="saveEmail" placeholder="Correo Electrónico" />
+        <input
+          type="password"
+          id="savePasswordInput"
+          placeholder="Contraseña" />
+        <input type="password" id="savePin" placeholder="PIN de 17 dígitos" />
+        <button onclick="savePassword()">Guardar</button>
+      </div>
+      <div id="getPassword">
+        <h2>Recuperar Contraseña</h2>
+        <input type="text" id="getAppName" placeholder="Nombre de la App" />
+        <input type="email" id="getEmail" placeholder="Correo Electrónico" />
+        <input type="password" id="getPin" placeholder="PIN de 17 dígitos" />
+        <button onclick="getPassword()">Recuperar</button>
+        <p id="retrievedPassword"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestor de Contraseñas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gestor de Contraseñas</h1>
+      <div id="savePassword">
+        <h2>Guardar Contraseña</h2>
+        <input
+          type="text"
+          id="saveAppName"
+          placeholder="Nombre de la App"
+          onkeypress="handleEnter(event, 'saveEmail')" />
+        <input
+          type="email"
+          id="saveEmail"
+          placeholder="Correo Electrónico"
+          onkeypress="handleEnter(event, 'savePasswordInput')" />
+        <input
+          type="password"
+          id="savePasswordInput"
+          placeholder="Contraseña"
+          onkeypress="handleEnter(event, 'savePin')" />
+        <input
+          type="password"
+          id="savePin"
+          placeholder="PIN de 17 dígitos"
+          onkeypress="handleEnter(event, 'saveButton')" />
+        <button id="saveButton" onclick="savePassword()">Guardar</button>
+      </div>
+      <div id="getPassword">
+        <h2>Recuperar Contraseña</h2>
+        <input
+          type="text"
+          id="getAppName"
+          placeholder="Nombre de la App"
+          onkeypress="handleEnter(event, 'getEmail')" />
+        <input
+          type="email"
+          id="getEmail"
+          placeholder="Correo Electrónico"
+          onkeypress="handleEnter(event, 'getPin')" />
+        <input
+          type="password"
+          id="getPin"
+          placeholder="PIN de 17 dígitos"
+          onkeypress="handleEnter(event, 'getButton')" />
+        <button id="getButton" onclick="getPassword()">Recuperar</button>
+        <p id="retrievedPassword"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
